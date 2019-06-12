@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.team{
+    background-color: #44aaee;
+    text-align: center;
+    padding: 50px;
+    overflow: hidden;
+    margin: 0 0;
+
+
+}
+.team h1{
+    text-transform: uppercase;
+    margin-top: -10px;
+    color: aquamarine;
+
+}
+.sp1{
+    width:200px;
+    height: 5px;
+    margin: auto;
+    display:block;
+    background-color: aqua;
+    margin-top: -10px;
+    margin-bottom:-5px;
+
+}
+.pics{
+    display:inline-block;
+    margin: 180px 360px;
+    overflow: hidden;
+    border-radius:50%;
+    margin-top: 10px;
+}
+.pics a img{
+    width: 100%;
+    filter:grayscale(100%);
+    transition:1.3s;
+}
+.pics a img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+.section{
+    text-align: justify;
+    font-size: 20px;
+    color: #46ff3e;
+    height: 0;
+    overflow: hidden;
+}
+.section:target{height: auto}
+.name{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 35px;
+}

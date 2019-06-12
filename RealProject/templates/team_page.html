@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<html>
+<head>
+    <title>Team Page</title>
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/team.css' %}">
+
+</head>
+<body>
+{% block content %}
+    <div class="team">
+    <h1>Our Team</h1>
+    <span class="sp1"></span>
+    <div class="pics">
+        <a href="#p1"><img src="{% static 'images/Srikanth new.jpg' %}"></a>
+    </div>
+<div class="section" id="p1">
+    <h1 class="name">Srikanth</h1>
+    <span class="sp1"></span>
+    <center><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem dolores magnam non qui quidem. Aperiam consectetur corporis dolorum illo inventore magnam optio porro, reprehenderit repudiandae sit, soluta voluptates! Eligendi.</p></center>
+</div>
+{% endblock %}
+</div>
+</div>
+</body>
+</html>

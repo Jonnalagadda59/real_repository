@@ -1,0 +1,66 @@
+{% load staticfiles %}
+<html>
+<head>
+    <title>Main page</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+    div{
+        margin-top:20px;
+    }
+    a{
+        margin:30px;
+        border-radius: 5px;
+        background-color:deepskyblue;
+        color:white;
+        padding: 10px 15px;
+        text-decoration:none;
+    }
+     a:hover{
+         background-color:blue;
+         color:white;
+     }
+
+    h2{
+        font-size: 80px;
+        text-shadow: 5px 5px 5px white;
+        color:blue;
+    }
+
+     .footer{
+         margin-top: 412px;
+         color: green; solid-color: green;
+         text-align: center;
+    }
+    #bg{
+    background-size: 1600px 800px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    }
+</style>
+<body id="bg" style="background-image: url('{% static "images/rel1.jpg"%}')";>
+<center>
+    <center><h2>Software Group Of Institutions</h2></center>
+    <div class="container">
+        <div>
+             <b><a href="/home/">Home</a></b>
+             <b><a href="/contact/">Contact</a></b>
+             <b><a href="/courses/">Courses</a></b>
+             <b><a href="/feedback/">Feedback</a></b>
+             <b><a href="/team/">Our Team</a></b>
+             <b><a href="/gallery/">Gallery</a></b>
+        </div>
+    </div>
+</center>
+<footer class="footer">
+    <marquee><h1>Welcome To My Website</h1></marquee>
+</footer>
+</body>
+</html>
